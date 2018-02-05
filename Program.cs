@@ -52,7 +52,7 @@ namespace codecamp3
             var query = words.Where(word => word.Contains('e')).OrderBy(word=>word);
             if (query.Count()==0)
             {
-                return "null";
+                return $"Null";
             } else {
                 
                 return $"The last word is {query.Last()}";
