@@ -4,7 +4,7 @@ Yêu cầu làm tất cả phần quiz và thực hành, gửi link github bài 
 ## Quiz:
 ### Câu 1: Lớp trong C# có thể kế thừa nhiều __
 A. Class
-**B. Interface**  
+---B. Interface
 C. Abstract class  
 D. Static class
 
@@ -13,7 +13,7 @@ D. Static class
 int grade = 65;
 string result = grade > 50 ? "Passed" : "Failed";
 ```  
-**A. Passed** 
+--A. Passed
 B. Failed  
 C. 5  
 D. Giá trị của biến grade
