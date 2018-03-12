@@ -4,8 +4,8 @@ Yêu cầu làm tất cả phần quiz và thực hành, gửi link github bài 
 ## Quiz:
 ### Câu 1: Lớp trong C# có thể kế thừa nhiều __
 A. Class
-B. Interface
-C. Abstract class  
+**B. Interface**
+C. Abstract class
 D. Static class
 
 ### Câu 2: Đoạn code dưới biến result sẽ có giá trị là gì?
@@ -13,19 +13,19 @@ D. Static class
 int grade = 65;
 string result = grade > 50 ? "Passed" : "Failed";
 ```  
-A. Passed
+-A. Passed
 B. Failed  
 C. 5  
 D. Giá trị của biến grade
 
 ### Câu 3. Mảng trong C# bắt đầu bằng index __
 A. 1  
-B. -1  
-C. 0     
+B. -1  
+-C. 0 
 D. Không đáp án nào đúng
 
 ### Câu 4. Điều nào dưới đây là đúng?
-A. Đoạn code trong `finally` được thực hiện trong mọi trường hợp     
+-A. Đoạn code trong `finally` được thực hiện trong mọi trường hợp 
 B. Có thể có nhiều đoạn code `finally` theo sau `try/ catch`  
 C. Đoạn code `finally` có thể nằm trước đoạn `catch`  
 D. Đoạn code `finally` có thể trả về kết quả với `return` 
@@ -33,13 +33,13 @@ D. Đoạn code `finally` có thể trả về kết quả với `return`
 ### Câu 5. Cách để lớp `Dog` kế thừa từ lớp `Animal`
 A. class Dog extends Animal {...}  
 B. class Dog inherits Animal {...}  
-C. class Dog => Animal {...}  
-D. class Dog : Animal {...}    
+C. class Dog => Animal {...}  
+-D. class Dog : Animal {...}    
 
 ### Câu 6. Trong lớp Animal, đâu là hàm khởi tạo hay constructor 
 A. public constructor Animal () {}  
-B. public Animal {}  
-C. public Animal () {}    
+B. public Animal {}  
+-C. public Animal () {}    
 D. static void Animal () {}  
 
 ### Câu 7. Đoạn code dưới đây trả về kết quả gì
@@ -61,12 +61,12 @@ D. static void Animal () {}
    }
 ```
 A. Code chạy thành công, không in gì ra console hết  
-B. Code chạy thành công và in `CSharp` ra console  
-C. Gặp lỗi vì biến t    
+B. Code chạy thành công và in `CSharp` ra console  
+-C. Gặp lỗi vì biến t    
 D. Không có đáp án nào ở trên đúng
 
 ### Câu 8. Có 1 file `myDoc.txt`, làm sao để đọc thời gian file này được tạo trong C#
-A.    
+-A.
 ```cs
 FileInfo myDoc = new FileInfo(@"C:\Users\Admin\Desktop\myDoc.txt");
 Console.WriteLine(myDoc.CreationTime);
@@ -98,7 +98,9 @@ foreach (var item in a){
 A. 100 7 23 9 0  
 B. 100 4 0    
 C. 7 23 9  
-D. 100 7 4 0 
+D. 100 7 4 0
+
+Không có đáp án đúng
 
 **4 câu hỏi tiếp theo (câu 10 đến câu 13) là về LINQ, ta có 1 mảng dữ liệu như sau**
 
@@ -110,7 +112,7 @@ string[] colors = { "green", "brown", "blue", "red" };
 ```cs
 colors.Max (c => c.Length)
 ```
-A. 5  
+-A. 5  
 B. green    
 C. brown  
 D. Ném ra lỗi
@@ -120,8 +122,8 @@ D. Ném ra lỗi
 var query = from c in colors where c.Length > 3 orderby c.Length select c;
 ```
 A. int  
-B. string    
-C. IEnumerable<string>    
+B. string    
+-C. IEnumerable<string>    
 D. IQueryable<string>  
 
 ### Câu 12. Đoạn code dưới đây trả về kết quả gì?
@@ -131,7 +133,7 @@ var query = from c in colors where c.Length == colors.Max (c2 => c2.Length) sele
 foreach (var element in query)
   Console.WriteLine (element);
 ```
-A. green brown    
+-A. green brown    
 B. 5 5    
 C. Lỗi biên dịch (compile-time error)    
 D. Ném ra ngoại lệ (throw exception)
@@ -142,14 +144,14 @@ var query = colors.Where (c => c.Contains ("e")).Where (c => c.Contains ("n"));
 
 Console.WriteLine (query.Count());
 ```
-A. 1    
+-A. 1    
 B. 2    
 C. 3    
 D. 4
 
 ### Câu 14. Khi kế thừa, lớp con trong cùng 1 assembly có thể kế thừa những thành viên nào của lớp cha
-A. static, public, private  
-B. public, protected, internal   
+A. static, public, private  
+-B. public, protected, internal   
 C. private, public, internal  
 D. static, private, internal  
 
@@ -158,7 +160,7 @@ D. static, private, internal
 List<double> doubles = new List<double> { 2.0, 2.1, 2.2, 2.3 };
 double whatsThis = doubles.FirstOrDefault(val => val > 2.3);
 ```
-A. Giá trị mặc định cho double là `0.0d`  
+-A. Giá trị mặc định cho double là `0.0d`  
 B. 2.2  
 C. Không gì cả. FirstOrDefault sẽ ném ra ngoại lệ  
 D. 2.3
@@ -170,7 +172,7 @@ List<int> filter = new List<int> { 1, 1, 2, 3, 5, 8 };
 // Will contain { 1, 2, 8 }
 IEnumerable<int> result = ints.Intersect(filter);
 ```
-A. 1 2 8  
+-A. 1 2 8  
 B. 1 2 3  
 C. 1 1 2 2 8   
 D. 1 2 4 8
